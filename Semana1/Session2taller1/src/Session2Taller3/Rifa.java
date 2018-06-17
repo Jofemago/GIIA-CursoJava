@@ -40,11 +40,12 @@ public class Rifa {
             int num = Integer.parseInt(obtener);
             if(num == a ){
                 find = true;
-            }else{
-                System.out.println("Fallo jaja.");
+            }else if(num > a){
+                System.out.println("El numero que buscas es menor");
+            }else if(num < a){
+                System.out.println("El numero que buscar es mayor ");
             }
-            
-            
+                       
         }
         System.out.println("Ganó");
     }
